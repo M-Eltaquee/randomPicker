@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Random Choie Picker</title>
+	</head>
+	<body>
+		<h1 class="heading">Let's choose it on behalf of you</h1>
+		<div class="container">
+			<div class="message">
+				<p>
+					<img src="meme.png" alt="" />
+					<strong>Enter</strong> all of the choices divided by a comma (",").
+					Press Enter when yo're done !
+				</p>
+			</div>
+			<textarea
+				name="options"
+				id="optons"
+				cols="20"
+				rows="5"
+				placeholder="Separate your choices by comma &quot,&quot then press Enter !"
+				autofocus
+			></textarea>
+		</div>
+		<div id="buttons"></div>
+		<p id="alert"></p>
+		<!-- Logic : highlit change sequentially for a random time and selected one is the last one highlighted when time is done -->
+		<script src="randomTime.js"></script>
+
+		<!-- Logic: highlit change randomly for a specific time and the selected one is one highlited when time is done -->
+		<!-- <script src="randomHighlight.js"></script> -->
+	</body>
+</html>
