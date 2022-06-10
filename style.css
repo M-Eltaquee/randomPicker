@@ -83,6 +83,22 @@ div#buttons span{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+@keyframes shake {
+  15%, 45%, 75%{
+    transform: rotate(10deg);
+  }
+  30%, 60%, 90%{
+    transform: rotate(-10deg);
+  }
+}
+@-webkit-keyframes shake {
+  15%, 45%, 75%{
+    transform: rotate(10deg);
+  }
+  30%, 60%, 90%{
+    transform: rotate(-10deg);
+  }
+}
 @media (max-width: 	540px){
   h1.heading{
     font-size: 18px;
@@ -93,9 +109,14 @@ div#buttons span{
     margin-top: 20px;
     position: relative;
     transition: all 0.3s;
+    animation: shake 0.3s linear;
+
   }
   .container img:hover{
-    transform: scale(1.2);
+    animation: shake 0.3s linear;
+    -o-animation:shake 0.3s linear ;
+    -webkit-animation: shake 0.3s linear;
+    -moz-animation: shake 0.3s linear;
   }
   .container textarea{
       width: 90%;
