@@ -9,10 +9,11 @@ body{
   background-color: var(--main-color);
     color: var(--text-color-one);
     text-align: center;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
 }
 h1.heading{
-  margin-top:20x;
+  margin-top:20px;
   margin-bottom: 25px;
 }
 .container{
@@ -81,4 +82,31 @@ div#buttons span{
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media (max-width: 	540px){
+  h1.heading{
+    font-size: 18px;
+    margin-top:20px;
+  }
+  .container img{
+    width: 100px;
+    margin-top: 20px;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .container img:hover{
+    transform: scale(1.2);
+  }
+  .container textarea{
+      width: 90%;
+
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.5;
+  }
+  div#buttons{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
 }
