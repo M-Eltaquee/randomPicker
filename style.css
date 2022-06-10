@@ -108,15 +108,14 @@ div#buttons span{
     width: 100px;
     margin-top: 20px;
     position: relative;
-    transition: all 0.3s;
-    animation: shake 0.3s linear;
-
   }
-  .container img:hover{
+  .container .message:hover .img{
     animation: shake 0.3s linear;
     -o-animation:shake 0.3s linear ;
-    -webkit-animation: shake 0.3s linear;
-    -moz-animation: shake 0.3s linear;
+    -webkit-animation: shake 0.3s linear ;
+    -moz-animation: shake 0.3s linear ;
+  
+
   }
   .container textarea{
       width: 90%;
